@@ -1,0 +1,265 @@
+  /* Custom styles to make the navbar float over the hero section */
+  .navbar {
+    border-radius: 15px;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+  }
+
+  /* Hero section styling */
+  .hero-section {
+    position: relative;
+    background: url('https://via.placeholder.com/1500x600') no-repeat center center;
+    background-size: cover;
+    height: 100vh; /* Full viewport height */
+    border-radius: 0;
+    margin: 0; /* Remove margin to make it flush with the navbar */
+  }
+
+  .hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  }
+
+  .hero-section .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffd700;
+    text-align: center;
+  }
+
+  .hero-section h1 {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+
+  .hero-section p {
+    font-size: 1.5rem;
+  }
+
+  /* About and Carousel section styling */
+  .about-carousel-section {
+    padding: 80px 20px;
+  }
+
+  .about-carousel-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #343a40;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+  }
+
+  .about-carousel-section p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: #555;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+
+  /* Keyframes for animations */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Carousel image styling */
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  /* Mission & Vision Section Styling */
+  .mission-vision-section {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    margin: 40px 0;
+  }
+
+  .mission-vision-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #343a40;
+  }
+
+  .mission-vision-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .mission-vision-content div {
+    flex-basis: 45%; /* 45% width for mission/vision */
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+
+  .mission-vision-content h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+
+  .mission-vision-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+  }
+
+  /* Services Section */
+  .services-section {
+    padding: 80px 20px;
+  }
+
+  .services-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .service-card {
+    position: relative;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    color: white;
+  }
+
+  .service-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .service-card .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+  }
+
+  .service-card h3 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .service-card p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  /* Locations Section */
+  .locations-section {
+    padding: 80px 20px;
+  }
+
+  .locations-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .location-card {
+    position: relative;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    color: white;
+  }
+
+  .location-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .location-card .content {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 10px;
+  }
+
+  .location-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .location-card p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  /* Locations Section */
+  .locations-section {
+    margin: 20px;
+  }
+  .location-card {
+    height: 200px;
+    color: white;
+    position: relative;
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .location-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .location-card .content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+  }
+  /* Map Section */
+  #map {
+    height: 400px;
+    margin: 20px;
+    border-radius: 10px;
+  }
